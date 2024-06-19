@@ -60,8 +60,4 @@ Console.WriteLine(numberA);
 int numberB = new Random().Next(10, 12);
 Console.WriteLine(numberB);
 int resolt = numberA + numberB;
-<<<<<<< HEAD
 Console.WriteLine(resolt);   
-=======
-Console.WriteLine(resolt);   
->>>>>>> d0f6501 (просит зафиксировать что то, похоже переименование)
