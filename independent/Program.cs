@@ -21,7 +21,33 @@ S = V × T
 T = S ÷ V
 
 */
+int count = 0;
+int frend = 2;
+int distance = 10000;
+int firstFriednSpeed = 1;
+int secondFriendSpeed = 2;
+int dogSpeed = 5;
+int time = 0;
 
-int frend
-int firstFriednSpeed
-int secondFriendSpeed
+while(distance > 10)
+{
+    if(frend == 2)
+    {
+        time = distance / (secondFriendSpeed + dogSpeed);
+        distance = distance- (secondFriendSpeed + firstFriednSpeed) * time;
+        frend =1;
+        count ++;
+    }
+    else if(frend ==1)
+    {
+        time = distance / (firstFriednSpeed + dogSpeed);
+        distance = distance - (secondFriendSpeed + firstFriednSpeed) * time;
+        frend = 2;
+        count ++;
+    }
+    Console.Write("Количество пробежек: ");
+    Console.WriteLine(count);
+    Console.Write("Какая дистанция осталась: ");
+    Console.WriteLine(distance);
+}
+Console.WriteLine(count);
